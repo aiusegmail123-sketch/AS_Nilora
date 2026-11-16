@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the AS NILORA jewellery and accessories collections — thoughtfully selected designs for every occasion.">
+  <meta name="theme-color" content="#211612">
+  <title>AS NILORA | Beauty • Fashion • Gifts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand-logo-link" href="#home" aria-label="AS NILORA home"><img class="nav-logo" src="assets/as-nilora-logo.jpeg" alt="AS NILORA"></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a><a href="#collections">Collections</a><a href="#story">Our Story</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="logo-intro" id="home">
+      <div class="intro-glow"></div>
+      <p class="eyebrow light">BEAUTY · FASHION · GIFTS</p>
+      <img class="hero-logo" src="assets/as-nilora-logo.jpeg" alt="AS NILORA logo">
+      <p class="hero-line">A little elegance. A lasting impression.</p>
+      <a class="gold-button" href="#collections">Explore the collections <span>↘</span></a>
+      <div class="scroll-note">SCROLL TO DISCOVER</div>
+    </section>
+
+    <section class="welcome section-wrap">
+      <p class="eyebrow">THE AS NILORA EDIT</p>
+      <h1>Details that make<br><em>every moment</em> special.</h1>
+      <p class="welcome-copy">Discover thoughtfully chosen jewellery and accessories, made to bring a graceful finishing touch to your everyday style and special occasions.</p>
+    </section>
+
+    <section class="collections section-wrap" id="collections">
+      <div class="section-heading">
+        <div><p class="eyebrow">FIND YOUR FAVOURITE</p><h2>Explore our collections</h2></div>
+        <p class="heading-note">Choose a collection to discover the designs.</p>
+      </div>
+      <div class="category-grid" id="categoryGrid"></div>
+      <div class="product-heading">
+        <div><p class="eyebrow">A CLOSER LOOK</p><h2 id="productHeading">Selected designs</h2></div>
+        <button class="text-button" id="showAll">View all designs ↗</button>
+      </div>
+      <div class="filter-row" id="filterRow"></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="brand-story" id="story">
+      <img class="story-logo" src="assets/as-nilora-logo.jpeg" alt="AS NILORA logo">
+      <div class="story-content">
+        <p class="eyebrow light">THE WORLD OF NILORA</p>
+        <h2>Made for your<br><em>own kind of beautiful.</em></h2>
+        <p>From little everyday favourites to statement pieces for celebrations, explore designs that let your personality shine.</p>
+        <a class="outline-button" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+ <section class="contact-section section-wrap" id="contact">
+
+  <p class="eyebrow">LET'S CONNECT</p>
+
+  <h2>Have a design in mind?</h2>
+
+  <p>
+    We would love to hear from you.
+    Contact us for jewellery and accessory enquiries.
+  </p>
+
+  <div class="owner-details">
+    <span>FOUNDER & OWNER</span>
+    <h3>Mrs. SudhaAnandh</h3>
+    <p>AS NILORA</p>
+  </div>
+
+  <div class="contact-actions" id="contactActions"></div>
+
+  <p class="contact-small">
+    BEAUTY · FASHION · GIFTS
+  </p>
+
+</section>
+  </main>
+
+  <footer><a class="brand-logo-link footer-logo-link" href="#home" aria-label="AS NILORA home"><img class="footer-logo" src="assets/as-nilora-logo.jpeg" alt="AS NILORA"></a><span>© <span id="year"></span> AS NILORA. All rights reserved.</span><a href="#home">Back to top ↑</a></footer>
+
+  <div class="gallery-modal" id="galleryModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Product photo gallery">
+      <button class="modal-close" id="modalClose" aria-label="Close gallery">×</button>
+      <div class="modal-photo-wrap">
+        <button class="gallery-arrow prev" id="prevImage" aria-label="Previous image">‹</button>
+        <img id="modalImage" src="" alt="">
+        <button class="gallery-arrow next" id="nextImage" aria-label="Next image">›</button>
+        <div class="image-count" id="imageCount">1 / 1</div>
+      </div>
+      <div class="modal-info"><p class="eyebrow" id="modalCategory"></p><h3 id="modalTitle"></h3><p>Swipe or use the arrows to view every angle.</p><div class="dots" id="galleryDots"></div></div>
+    </div>
+  </div>
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
