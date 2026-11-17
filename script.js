@@ -1,6 +1,6 @@
 // AS NILORA CONTACT DETAILS
 const SHOP_DETAILS = {
-  whatsappNumber: "919994996834",
+  whatsappNumber: "918098827156",
   email: "asnilora26@gmail.com"
 };
 
